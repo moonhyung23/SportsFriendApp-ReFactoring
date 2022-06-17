@@ -80,7 +80,7 @@
                 android:id="@+id/rv_bulletinRv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="10dp"
+                android:padding="15dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/rv_item_bulletin" />
 
