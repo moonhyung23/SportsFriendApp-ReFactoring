@@ -18,7 +18,6 @@ import java.io.IOException
 class App : Application() {
     private val PREF_NAME = "MyDataStore"
     private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(PREF_NAME)
-
     //바텀내비게이션 프래그먼트 밖에서 모집 글의 수정, 삭제가 발생했을 때 모집 글목록 프래그먼트에 오면 모집글을 갱신시키는 flag
     //-바텀내비게이션이 재생성 되지 않기 때문에 만들었음.
     //0번 : 갱신 X
@@ -47,7 +46,7 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
-
+    Timber.e("aaaaa")
     }
 
     //객체 생성
